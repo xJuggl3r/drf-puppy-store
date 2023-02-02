@@ -1,5 +1,10 @@
 from django.test import TestCase
 from ..models import Puppy
+from ..serializers import PuppySerializer
+from rest_framework import status
+from django.test import Client
+
+from django.urls import reverse
 
 
 class PuppyTest(TestCase):
